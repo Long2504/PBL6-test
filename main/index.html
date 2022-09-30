@@ -29,7 +29,6 @@
                             <i class="fa fa-user fa-2x" aria-hidden="true"></i>
                         </button>
                         <ul class="detailPersonal">
-                            
                             <li><a href="">Thông tin tài khoản</a></li>
                             <li><a href="">Quản lí đơn hàng</a></li>
                             <li><a href="">Câu hỏi thường gặp</a></li>
@@ -50,6 +49,10 @@
         </div>
 
         <div id="slider">
+            <div class="slider-sub">
+                <img src="https://dlcdnwebimgs.asus.com/gain/AA39F748-8AA2-4B41-AE10-0FA4B590583A" alt="">
+            </div>
+            
 
         </div>
 
@@ -57,7 +60,74 @@
 
         </div>
 
-        <div id="footer"></div>
+        <Footer id="footer">
+            <div class="footer__top"></div>
+            <div class="footer__bottom">
+                <div class="pay">
+                    <h4>Phương thức thanh toán</h4>
+                    <div class="listMethodPay">
+                        <div class="item">
+                            <a href="#"><img src="https://shopfront-cdn.tekoapis.com/static/7534c48e46ec507e.svg" alt="" class="footer_img"></a>
+                            <p>QR code</p>
+                           
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="https://shopfront-cdn.tekoapis.com/static/0e924ede5a93187b.svg" alt="" class="footer_img"></a>
+                            <p>Tiền mặt</p>
+                           
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="https://shopfront-cdn.tekoapis.com/static/b2c29b7046b45840.svg" alt="" class="footer_img"></a>
+                            <p>Trả góp</p>
+                           
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="https://shopfront-cdn.tekoapis.com/static/abf02ec95226fd05.svg" alt="" class="footer_img"></a>
+                            <p>Internet Banking</p>
+                           
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="community">
+                    <h4>Cộng đồng tech</h4>
+                    <div class="listCommunity">
+                        <div class="item">
+                            <a href=""><img src="https://shopfront-cdn.tekoapis.com/static/4a245cee42ae6bbb.svg" alt="" class="footer_img"></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="https://shopfront-cdn.tekoapis.com/static/2d3d889a92325278.svg" alt="" class="footer_img"></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="https://shopfront-cdn.tekoapis.com/static/c71967f1b568ff35.svg" alt="" class="footer_img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Footer>
+            
+        </div>
     </div>
+
+
+    <script type="text/javascript">
+        let image = document.querySelector('#slider .slider-sub img');
+        let images = [
+            'https://dlcdnwebimgs.asus.com/gain/AA39F748-8AA2-4B41-AE10-0FA4B590583A',
+            'https://dlcdnwebimgs.asus.com/gain/64B0F267-4834-4C76-BC12-ECEA2BAE0E67',
+            'https://dlcdnwebimgs.asus.com/gain/EBE6AFFE-B4AF-4D9B-ABC7-A562F10DE1C4/fwebp'
+        ];
+        var i = 1;
+        setInterval(function(){
+            if( i == images.length){
+                i = 0;
+            }
+            image.src = images[i]
+            i++;
+        },3000);
+    </script>
 </body>
 </html>
+
+
