@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*---------------header-------------*/
+
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    
+}
+
+.container{
+    width: 75%;
+    height: 100px;
+    margin-left: 8%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    width: 15%;
+    height: 100px;
+}
+
+.nav li{
+
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 15px;
+}
+
+.nav li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.nav li:hover a{
+    color: slateblue;
+}
+
+.iconBlock{
+    width: 15%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.distribution{
+    height: 60%;
+    border-left: 1px solid white;
+    margin-top: 12px;
+}
+
+.btn{
+    line-height: 100px;
+    background: black;
+    border: none;
+}
+
+.btn:hover i{
+    color: slateblue;
+}
+
+.fa{
+    color: aliceblue;
+    background-color: black;
+
+}
+
+.personal .btn-personal{
+    position: relative; 
+}
+
+.personal .detailPersonal{
+    display: none;
+    width: 250px;
+    height: 220px;
+    background-color: rgb(207, 207, 200);
+    position: absolute;
+    list-style-type: none;
+
+}
+
+.personal .detailPersonal li{
+    margin-left: 25px;
+    width: 100%;
+    height: 22%;
+    padding-top: 20px;
+}
+
+.personal .detailPersonal li a{ 
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.personal button:hover .detailPersonal{
+    display: block;
+}
+/*------------------------------------------------------*/
+
+
+/*-----------------content------------------------------*/
+#content{
+    width: 100%;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #333;
+}
+
+#content .clearfix{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+#content .clearfix p{
+    color: white;
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+#content .main-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#content .main-menu > .list{
+    width: 15%;
+    height: 540px;
+    background-color: #2D2D2D;
+
+}
+
+#content .main-menu .list .item{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+#content .main-menu .list .item .container-item{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.item .container-item span{
+    margin-left: 10px;
+}
+
+.item .container-item img{
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+
+#content .main-menu .classify{
+    width:  70%;    
+    margin-left: 40px;
+}
+
+#content .main-menu .classify .detail{
+    width: 95%;
+    height: 500px;
+    background-color: #999999;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.detail .detail-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+
+.detail .detail-item .title{
+    width: 300px;
+    line-height: 50px;
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+
+.detail .detail-item .name-classify{
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 30px;
+}
+
+
+#content .main-menu .classify .sort{
+    width: 95%;
+    height: 80px;
+    margin-top: 30px;
+    border: 1px solid black;
+}
+
+
+#content .main-menu .classify .list-product{
+    width: 95%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.list-product .product{
+    width: 30%;
+    height: 150px;
+    /* background-color: aqua; */
+    
+}
+
+.list-product .product .product-container{
+    width: 100%;
+    height: 350px;
+    background-color: #242323;
+}
+
+.list-product .product .product-container .product-image-container{
+    display: flex;
+    justify-content: center;
+}
+
+.product-container .btn-compare {
+    height: 50px;    
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.product-container .btn-compare input{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 40px;
+    margin-right: 15px;
+    border:1px solid white; 
+}
+
+
+.list-product .product .infor-product{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color: #fff;
+}
+
+.infor-product .name-product{
+    font-size: 1.2rem;
+    padding: 20px 30px 0 30px;
+}
+
+
+.infor-product .price-product{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+
+.infor-product .btn-addProduct{
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #44d62c;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+
+
+
+#content .main-menu .more{
+    width:  15%;    
+}
+
+
+
+
+/*--------------------------------------------------------*/
+
+
+/*-----------------------footer----------------------------*/
+#footer{
+    width: 100%;
+    background-color: #000000;
+    margin-bottom: 0;
+}
+
+#footer .footer__top{
+    width: 100%;
+    height: 180px;
+    border-bottom:1px solid #333;
+}
+
+#footer .footer__bottom{
+    width: 100%;
+    height: 170px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+#footer .footer__bottom .pay{
+    width: 40%;
+    height: 170px;
+}
+
+#footer .footer__bottom .footer_img{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+}
+
+.pay h4{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.pay .listMethodPay{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.pay .listMethodPay .item{
+    width: 25%;
+    margin: auto 0;    
+}
+
+#footer .footer__bottom .community{
+    width: 60%;
+    height: 170px;
+}
+
+.community h4{
+    margin-top: 20px;
+    margin-left: 750px;
+}
+
+.community .listCommunity{
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 750px;
+}
+
+.community .listCommunity .item{
+    width: 30%;
+    margin: auto 0;
+}
